@@ -9,12 +9,15 @@ source("Code/libraries.R", encoding = "UTF-8")
 
 # Daten laden ----
 
-# Covid <- 
-# read.csv("https://covid.ourworldindata.org/data/owid-covid-data.csv")
+Covid <-
+  read.csv("https://covid.ourworldindata.org/data/owid-covid-data.csv")
 
 # Daten aufbereiten ----
 
-Covid
+
+## Erstelle eine Funktion, die für eine beliebige Spalte 
+## relevante Größen berechnet (Wie die summary() Funktion)
+## Wende diese Funktion auf alle Spalten an.
 
 # Daten visualisieren ----
 
