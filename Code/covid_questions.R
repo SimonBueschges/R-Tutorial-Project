@@ -1,7 +1,15 @@
 # Allgemeine Übung -------------------------------------------------------------
 
 # Erhöhe jeden zweiten Wert des Vektors um das doppelte
-# des vorherigen Wert im Vektor
+# des vorherigen Wert im Vektor 1:10
+
+c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+c(1, 4, 3, 10, 5, 16, 7, 22, 9, 28)
+
+
+c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)+
+  c(0, 2, 0, 6, 0, 10, 0, 14, 0)
 
 
 ## Erzeuge einen Vektor der aufsteigenden Zahlen an den Positionen der 
@@ -9,7 +17,32 @@
 ## Z.B. c("a", "g", "e", "f", "a") 
 ## wird zu c(1, 0, 2, 0, 3)
 
+ziel <- c()
+erg <- c("a", "g", "e", "f", "a",  "e", "f", "a")
 
+for(i in 1:length(erg)){
+  if(erg[i] %in% c("a", "e", "i", "o", "u")){
+    
+    ziel[i] <- 1
+  } else {
+    ziel[i] <-  0
+  }
+}
+
+ziel
+
+ziel2 <- c()
+
+for(i in 1:length(erg)){
+  if(erg[i] %in% c("a", "e", "i", "o", "u")){
+    
+    ziel2[i] <- cumsum(ziel)[i]
+  } else {
+    ziel2[i] <- ziel[i]
+  }
+}
+
+ziel2
 
 # Fragen zu Covid Daten ----
 
