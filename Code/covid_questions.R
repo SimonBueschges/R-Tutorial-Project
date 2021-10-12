@@ -1,3 +1,16 @@
+# Allgemeine Übung -------------------------------------------------------------
+
+# Erhöhe jeden zweiten Wert des Vektors um das doppelte
+# des vorherigen Wert im Vektor
+
+
+## Erzeuge einen Vektor der aufsteigenden Zahlen an den Positionen der 
+## Vokale im letters Vektor enthält und 0 für Konsonaten.
+## Z.B. c("a", "g", "e", "f", "a") 
+## wird zu c(1, 0, 2, 0, 3)
+
+
+
 # Fragen zu Covid Daten ----
 
 ## Wie viele Covid Cases gab es bis zum Zeitpunkt 
